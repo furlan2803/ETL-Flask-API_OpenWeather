@@ -124,6 +124,8 @@ Ao seguir as instruções de execução fornecidas acima, espera-se que o projet
 
 ### Resultados Esperados - API
 
-
+<img src="./assets/resultadoApi.gif">
 
 ### Resultados Esperados - Teste
+
+<img src="./assets/resultadoTeste.gif">
