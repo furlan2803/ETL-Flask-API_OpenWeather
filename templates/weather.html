@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta - Open Weather</title>
+    
+    <style>
+        * {
+            background-color: #10c6c6;
+            font-family: "Poppins-Medium", Helvetica;
+            font-weight: 500;
+        }
+
+        .text {
+            color: #ffffff;
+            font-size: 70px;
+            text-align: center;
+            margin-top: 300px;
+        }
+
+        .text-button {
+            position: absolute;
+            color: #000000;
+            font-size: 32px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 30%;
+            margin-left: 35%;
+            margin-top: 5%;
+            border: none;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="index">
+        <div class="div">
+            <div class="text">Consulta<br/>Open Weather</div>
+            <button id="acessarDados" class="text-button">Acessar Dados</button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('acessarDados').addEventListener('click', function() {
+            window.location.href = '/weather_data';
+        });
+    </script>
+</body>
+</html>

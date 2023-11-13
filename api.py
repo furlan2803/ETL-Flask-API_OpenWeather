@@ -26,7 +26,7 @@ class WeatherData(db.Model):
 def perform_etl():
     
     api_key = '402d6b30685d4ddcf2b466aa8f35c18b'
-    cities = ['São Paulo', 'Rio de Janeiro', 'Belo Horizonte', 'Brasília', 'Salvador', 'Recife', 'Fortaleza']
+    cities = ['São Paulo', 'Paris', 'Copenhague', 'Viena', 'Melbourne', 'Sydney', 'Vancouver', 'Calgary', 'Zurique', 'Genebra', 'Toronto', 'Osaka', 'Auckland', 'Adelaide', 'Perth']
     
     weather_data_list = []  
     
@@ -55,10 +55,10 @@ def perform_etl():
 
     return weather_data_list
 
-@app.route('/etl', methods=['GET'])
+@app.route('/', methods=['GET'])
 def etl_route():
     weather_data_list = perform_etl()
-    return 'Dados extraídos e armazenados no banco de dados'
+    return render_template('weather.html')
 
 
 @app.route('/weather_data', methods=['GET'])
